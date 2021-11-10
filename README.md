@@ -1,15 +1,12 @@
 # Spotify, Machine Learning and Shiny
 
-**A workflow that gathers data from the Spotify API, creates a simple Logistic Regression model, and then produces a Shiny app to display results of predictions.**
-
-A Machine Learning model trained on ~5,000 hit songs recorded between 1970 and 2019. The aim was to classify songs as being from either before or after the mid-point year of 1995. The model uses metrics available from Spotify's API - including tempo, duration, 'valence', 'acousticness', etc. - to make predictions. Songs that were part of the original training and test sets are exlcuded from the results.
-
-You can see how accurately the model is able to predict the relative age of songs by entering a song's Spotify link into the box below. In the Spotify interface, click on the three dots to the right of a song title, then Share, and finally on Copy Link. You can then paste that link into the field below.
-
-Once you've entered a link, click 'Run Prediction'. The model will make a guess and provide an indication of how likely that prediction is to be 'correct'. Most of the time the model is pretty accurate (although it does of course have a randon 50/50 chance of being correct!). In testing, it achieved ~85% accuracy but tended to struggle most with songs recorded in years immediately either side of 1995 and with songs that exemplify certain genres (e.g. jazz, country).
+**A workflow that gathers data from the Spotify API, creates a simple Logistic Regression model, and then produces a Shiny app enabling users to enter songs and see the results of predictions.**
 
 ![](images/spot_model.png)
 
+A Machine Learning model trained on ~5,000 hit songs recorded between 1970 and 2019. The aim was to classify songs as being from either before or after the mid-point year of 1995. The model uses metrics available from Spotify's API - including tempo, duration, 'valence', 'acousticness', etc. - to make predictions. You can see a live, working version of the app this workflow creates [here](https://craigfots.shinyapps.io/Spotify_LogReg_1995/). 
+
+This repo contains all the code required to recreate the app, from gathering Spotify data to development of the Shiny app. However, before proceeding you will first need to obtain your own credentials for the [Spotify API](https://developer.spotify.com). 
 
 The contents of the repo are as follows:
 
@@ -43,5 +40,5 @@ Build a local version of a Shiny app that enables users to use the model via an 
 
 **8 - Shiny App**
 
-Style the app, split out functions into separate scripts, add descriptive text.
+A folder containing all the elements required to style the app, split out functions into separate scripts, and add descriptive text.
 
