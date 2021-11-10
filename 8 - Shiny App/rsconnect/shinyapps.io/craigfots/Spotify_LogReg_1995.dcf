@@ -1,0 +1,14 @@
+name: Spotify_LogReg_1995
+title: Spotify_LogReg_1995
+username:
+account: craigfots
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5035736
+bundleId: 5235405
+url: https://craigfots.shinyapps.io/Spotify_LogReg_1995/
+when: 1636532956.42397
+lastSyncTime: 1636532956.424
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: www/.DS_Store
